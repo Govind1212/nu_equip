@@ -19,12 +19,12 @@ if(isset($_POST['data'])){
 		// echo 'allright';
 		$result['valid'] = true;
 		if($user_exist['type_id'] == 1){
-			//1 means normal usr or user
-			$_SESSION['user_logged_in'] = $user_exist['usr_id'];
-			$result['url'] = 'user/item-issued.php';
+			//1 means normal emp or user
+			$_SESSION['user_logged_in'] = $user_exist['emp_id'];
+			$result['url'] = 'user/item-owned.php';
 		}else{
 			//2 means admin 
-			$_SESSION['admin_logged_in'] = $user_exist['usr_id'];
+			$_SESSION['admin_logged_in'] = $user_exist['emp_id'];
 			$result['url'] = 'admin/item.php';
 		}
 	}else{

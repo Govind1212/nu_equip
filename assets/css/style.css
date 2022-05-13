@@ -1,3 +1,7 @@
+
+
+
+}
 #container {
 	background: transparent;
 	font-size: 1.2em;
@@ -10,14 +14,14 @@
 	float: right;
 	width: 840px;
 	height: 500px;
-	background-color:rgb(27, 160, 221) ;
+	background-color: ;
 	
 }
 #left_content{
 	float: left;
 	width: 260px;
 	height: 200px;
-	background-color: rgb(27, 160, 221) ;
+	background-color: ;
 }#left_content ul {
 	display: block;
 	list-style: none;

@@ -46,28 +46,28 @@ class Request extends Database implements iRequest {
 
 	}
 
-	public function all_issuers_request()
+	public function all_owners_request()
 	{
 		$this->my_session_start();//start session
-		//issuers_id is the User's ID store in session
-		$issuers_id = $_SESSION['user_logged_in'];
-		// $issuers_id = $issuers_id['usr_id'];
+		//owners_id is the employee's ID store in session
+		$owners_id = $_SESSION['user_logged_in'];
+		// $owners_id = $owners_id['emp_id'];
 
 		$request_is_done = 0;//display only those requesst which is not done or = 0;
 		$sql = "SELECT * 
 				FROM tbl_request r
 				INNER JOIN tbl_item i 
 				ON r.item_id = i.item_id
-				INNER JOIN tbl_user e  
-				ON i.usr_id = e.usr_id
+				INNER JOIN tbl_employee e  
+				ON i.emp_id = e.emp_id
 				INNER JOIN tbl_req_type rt 
 				ON r.req_type_id = rt.req_type_id
 				INNER JOIN tbl_req_status rs 
 				ON r.req_status_id = rs.req_status_id
-				WHERE e.usr_id = ?
+				WHERE e.emp_id = ?
 				AND r.req_is_done = ?;
 		";
-		return $this->getRows($sql, [$issuers_id, $request_is_done]);
+		return $this->getRows($sql, [$owners_id, $request_is_done]);
 	}
 
 	public function request_done($item_id)
@@ -76,7 +76,7 @@ class Request extends Database implements iRequest {
 		//update request
 
 		$status = 4;/// 4 is the default id for item that has not request
-		$request_is_done = 1;//done para dili na siya ma view sa issuers current request
+		$request_is_done = 1;//done para dili na siya ma view sa owners current request
 
 		//update item
 		$sql = "UPDATE tbl_item
@@ -111,8 +111,8 @@ class Request extends Database implements iRequest {
 				FROM tbl_request r 
 				INNER JOIN tbl_item i 
 				ON r.item_id = i.item_id
-				INNER JOIN tbl_user e 
-				ON i.usr_id = e.usr_id
+				INNER JOIN tbl_employee e 
+				ON i.emp_id = e.emp_id
 				INNER JOIN tbl_req_type rt 
 				ON r.req_type_id = rt.req_type_id
 				WHERE r.req_status_id = ?
@@ -151,6 +151,6 @@ class Request extends Database implements iRequest {
 $request = new Request();
 
 /* End of file Request.php */
-/* Location: .//D/xampp/htdocs/nu_emgt/class/Request.php */
+/* Location: .//D/xampp/htdocs/deped/class/Request.php */
 
 

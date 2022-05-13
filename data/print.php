@@ -19,7 +19,7 @@ if(isset($_GET['choice'])){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>NU Equipment Management System</title>
+    <title>DepEd Inventory System</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@ if(isset($_GET['choice'])){
 
 
 <center>
-    <h2>NU Equipment Management System</h2>
+    <h2>DepEd Item Inventory</h2>
     <h3>as of</h3>
     <h3><?= date('m-d-Y'); ?></h3>
 </center>
@@ -43,17 +43,17 @@ if(isset($_GET['choice'])){
     <thead>
         <tr>
             <th>Item Name</th>
-            <th>Issuer</th>
-            <th>Department</th>
+            <th>Owner</th>
+            <th>Office</th>
             <th>Category</th>
             <th>Condition</th>
         </tr>
     </thead>
     <tbody>
         <?php foreach($reports as $r): 
-            $fN = $r['usr_fname'];
-            $mN = $r['usr_mname'];
-            $lN = $r['usr_lname'];
+            $fN = $r['emp_fname'];
+            $mN = $r['emp_mname'];
+            $lN = $r['emp_lname'];
             $mN = $mN[0];
             $fullName = "$fN $mN. $lN";
             $fullName = ucwords($fullName);
@@ -61,7 +61,7 @@ if(isset($_GET['choice'])){
             <tr>
                 <td><?= $r['item_name']; ?></td>
                 <td><?= $fullName; ?></td>
-                <td><?= $r['dep_desc']; ?></td>
+                <td><?= $r['off_desc']; ?></td>
                 <td><?= $r['cat_desc']; ?></td>
                 <td><?= $r['con_desc']; ?></td>
             </tr>

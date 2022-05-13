@@ -7,7 +7,7 @@ class Database extends Connection{
 
 	public function __construct(){
 
-		parent::__construct();//
+		parent::__construct();//put this if naay default constructor and class na iya ge extendnan para ma apil sad diri
 		//above code copy the default constructor of the class extended
 
 	}//endDefaultConstructor
@@ -67,6 +67,7 @@ class Database extends Connection{
 	}//end lastID func
 
 
+	//under construction kay dili pa mo gana!!!!
 	public function transInsert($query, $params = [], $query2, $params2 = []){
 		try {
 			$this->transaction->beginTransaction();

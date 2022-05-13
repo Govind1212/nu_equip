@@ -1,5 +1,5 @@
 <?php
-backup_tables('localhost','root','','nuemgt');
+backup_tables('localhost','root','','deped');
 
 /* backup the db OR just a table */
 require_once('database/Database.php');

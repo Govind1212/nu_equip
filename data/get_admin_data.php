@@ -6,8 +6,8 @@ $admin = $login->admin_data();
 
 if($admin > 1){
 	$result['valid'] = true;
-	$result['logged'] = $admin['usr_fname'].' '.$admin['usr_lname'];
-	$result['logged_un'] = $admin['usr_un'];
+	$result['logged'] = $admin['emp_fname'].' '.$admin['emp_lname'];
+	$result['logged_un'] = $admin['emp_un'];
 }else{
 	$result['valid'] = false;
 }

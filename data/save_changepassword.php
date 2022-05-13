@@ -1,5 +1,5 @@
 <?php 
-require_once('../class/User.php');
+require_once('../class/Employee.php');
 if(isset($_POST['uid'])){
 	$id = $_POST['uid'];
 	$un = $_POST['un'];
@@ -7,10 +7,10 @@ if(isset($_POST['uid'])){
 
 	$pwd = md5($pwd);
 
-	$result['valid'] = $user->change_user_password($id, $un, $pwd);
+	$result['valid'] = $employee->change_employee_password($id, $un, $pwd);
 	if($result['valid']){
 		$result['msg'] = 'Password Change Successfully!';
 		echo json_encode($result);
 	}
 }
-$user->Disconnect();
+$employee->Disconnect();

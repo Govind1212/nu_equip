@@ -12,7 +12,7 @@ $results = $request->all_request_from_admin();
 <table id="myTable-request-to-admin" class="table table-bordered table-hover" cellspacing="0" width="100%">
 	<thead>
 	    <tr>
-	        <td>User</td>
+	        <td>Employee</td>
 	        <td>Item Name</td>
 	        <td>Date</td>
 	        <td>Request for</td>
@@ -47,7 +47,7 @@ $results = $request->all_request_from_admin();
  		}
  	 ?>
  		<tr>
- 			<td <?= $text_color; ?> ><?= $r['usr_fname'].' '.$r['usr_mname'][0].'.'.' '.$r['usr_lname']; ?></td>
+ 			<td <?= $text_color; ?> ><?= $r['emp_fname'].' '.$r['emp_mname'][0].'.'.' '.$r['emp_lname']; ?></td>
  			<td <?= $text_color; ?> ><?= $r['item_name']; ?></td>
  			<td <?= $text_color; ?> ><?= $r['req_date']; ?></td>
  			<td <?= $text_color; ?> ><?= $req_type; ?></td>
@@ -67,7 +67,7 @@ $results = $request->all_request_from_admin();
 $request->Disconnect();
  ?>
 
-<!-- for the datatable of user -->
+<!-- for the datatable of employee -->
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#myTable-request-to-admin').DataTable();

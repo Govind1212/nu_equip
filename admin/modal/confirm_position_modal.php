@@ -7,7 +7,7 @@
 			</div>
 			<div class="modal-body">
 				<div align="center">
-						<strong class="text-danger">If you delete this all user associated with this position will also be deleted.</strong>
+						<strong class="text-danger">If you delete this all employee associated with this position will also be deleted.</strong>
 						<button type="button" class="btn btn-danger btn-lg" id="confirm-position">Confirm
 							<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
 						</button>

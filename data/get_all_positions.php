@@ -35,7 +35,7 @@ $pos =  $position->get_positions();
 $position->Disconnect();
  ?>
 
-<!-- for the datatable of user -->
+<!-- for the datatable of employee -->
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#myTable-position').DataTable();

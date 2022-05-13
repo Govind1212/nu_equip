@@ -1,8 +1,8 @@
 <?php 
 require_once('../class/Item.php'); 
-require_once('../class/User.php'); 
+require_once('../class/Employee.php'); 
 
-$users = $user->get_users();
+$employees = $employee->get_employees();
 $categories = $item->item_categories();
 $conditions = $item->item_conditions();
 
@@ -62,21 +62,21 @@ $conditions = $item->item_conditions();
 
 					
 				    <div class="form-group">
-					    <label class="control-label col-sm-3" for="usrID-update">User:</label>
+					    <label class="control-label col-sm-3" for="empID-update">Employee:</label>
 					    <div class="col-sm-9"> 
-					    	<select class="btn btn-default" id="usrID-update">
+					    	<select class="btn btn-default" id="empID-update">
 					    		
 								<?php 
-									foreach ($users as $user) {
+									foreach ($employees as $empployee) {
 										# code..
-									$fN = $user['usr_fname'];
-									$mN = $user['usr_mname'];
-									$lN = $user['usr_lname'];
+									$fN = $empployee['emp_fname'];
+									$mN = $empployee['emp_mname'];
+									$lN = $empployee['emp_lname'];
 									$fullName = "$fN $mN $lN";
 									$fullName = ucwords($fullName);
-									$usr_id = $user['usr_id'];
+									$emp_id = $empployee['emp_id'];
 								?>	
-									<option value="<?php echo $usr_id; ?>"><?php echo $fullName; ?></option>}
+									<option value="<?php echo $emp_id; ?>"><?php echo $fullName; ?></option>}
 								<?php
 									}//end foreach
 								 ?>					    		

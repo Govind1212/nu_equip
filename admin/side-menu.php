@@ -1,4 +1,4 @@
-<div id="left_content">
+	<div id="left_content">
 		<div class="panel-group">
  			 <div class="panel panel-primary">
  			 	<div class="panel-heading">Quick Access</div>
@@ -11,17 +11,17 @@
                 </li>
 
   	  					<li>
-                  <a href="#modal-add-user" id="add-user-menu" data-toggle="modal">
+                  <a href="#modal-add-employee" id="add-employee-menu" data-toggle="modal">
                   <span class="glyphicon glyphicon-user"></span>
-                  Add User</a> 
+                  Add Employee</a> 
                 </li>
 
                 <li><a href="#modal-add-position" data-toggle="modal"><span class="glyphicon glyphicon-road"></span>
                   Add Position</a> 
                 </li>
 
-                 <li><a href="#modal-add-department" data-toggle="modal"><span class="glyphicon glyphicon-tower"></span>
-                  Add Location</a> 
+                 <li><a href="#modal-add-office" data-toggle="modal"><span class="glyphicon glyphicon-tower"></span>
+                  Add Office</a> 
                 </li>
   	  					
                 <li>

@@ -1,9 +1,9 @@
 <?php 
-require_once('../class/User.php');
-$user->my_session_start();
+require_once('../class/Employee.php');
+$employee->my_session_start();
 $eid = $_SESSION['user_logged_in'];
-// $eid = $eid['usr_id'];
-$result = $user->get_user($eid);
+// $eid = $eid['emp_id'];
+$result = $employee->get_employee($eid);
 echo json_encode($result);
 
-$user->Disconnect();
+$employee->Disconnect();

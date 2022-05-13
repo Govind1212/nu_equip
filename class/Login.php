@@ -24,15 +24,15 @@ class Login extends Database implements iLogin {
 	
 	public function check_user()
 	{
-		//$type = 1;//1 = user 2 = admin 
-		$at_nuemgt = 1;//1 if he or she is still working at nuemgt
+		//$type = 1;//1 = user 2 = admin if wala ge change ang db value
+		$at_deped = 1;//1 if he or she is still working at deped
 		$sql = "SELECT *
-				FROM tbl_user
-				WHERE usr_un = ?
-				AND usr_pass = ?
-				AND usr_at_nuemgt = ?
+				FROM tbl_employee
+				WHERE emp_un = ?
+				AND emp_pass = ?
+				AND emp_at_deped = ?
 		";
-		$result = $this->getRow($sql, [$this->username, $this->password, $at_nuemgt]);
+		$result = $this->getRow($sql, [$this->username, $this->password, $at_deped]);
 		return $result;
 
 	}
@@ -40,15 +40,15 @@ class Login extends Database implements iLogin {
 	public function get_user_id()
 	{
 		$type = 1;//1 = user 2 = admin if wala ge change ang db value
-		$at_nuemgt = 1;//1 if he or she is still working at nuemgt
-		$sql = "SELECT usr_id
-				FROM tbl_user
-				WHERE usr_un = ?
-				AND usr_pass = ?
+		$at_deped = 1;//1 if he or she is still working at deped
+		$sql = "SELECT emp_id
+				FROM tbl_employee
+				WHERE emp_un = ?
+				AND emp_pass = ?
 				AND type_id = ?
-				AND usr_at_nuemgt = ?
+				AND emp_at_deped = ?
 		";
-		$result = $this->getRow($sql, [$this->username, $this->password, $type, $at_nuemgt]);
+		$result = $this->getRow($sql, [$this->username, $this->password, $type, $at_deped]);
 		return $result;
 	}
 
@@ -84,14 +84,14 @@ class Login extends Database implements iLogin {
 	public function admin_data()
 	{
 		/*get admin user and password through session id*/
-		$at_nuemgt = 1;//1 means naa pa siya ga work sa nuemgt other wise wala na
+		$at_deped = 1;//1 means naa pa siya ga work sa deped other wise wala na
 		$id = $_SESSION['admin_logged_in'];//session na store pag login sa admin
 		$sql = "SELECT *
-				FROM tbl_user 
-				WHERE usr_id = ?
-				AND usr_at_nuemgt = ?
+				FROM tbl_employee 
+				WHERE emp_id = ?
+				AND emp_at_deped = ?
 		";
-		return $this->getRow($sql, [$id, $at_nuemgt]);
+		return $this->getRow($sql, [$id, $at_deped]);
 
 	}
 
@@ -102,4 +102,5 @@ class Login extends Database implements iLogin {
 $login = new Login();
 
 /* End of file Login.php */
-/* Location: .//D/xampp/htdocs/nu_emgt/class/Login.php */
+/* Location: .//D/xampp/htdocs/deped/class/Login.php */
+

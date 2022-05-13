@@ -6,3 +6,4 @@ interface iLogin{
 	public function user_session();
 	public function user_logout();
 }
+

@@ -16,17 +16,17 @@ if(isset($_POST['choice'])){
 	<thead>
 	    <tr>
 	        <th>Item Name</th>
-	        <th>Issuer</th>
-	        <th>Location</th>
+	        <th>Owner</th>
+	        <th>Office</th>
 	        <th>Category</th>
 	        <th>Condition</th>
 	    </tr>
 	</thead>
     <tbody>
     	<?php foreach($reports as $r): 
-    		$fN = $r['usr_fname'];
-    		$mN = $r['usr_mname'];
-    		$lN = $r['usr_lname'];
+    		$fN = $r['emp_fname'];
+    		$mN = $r['emp_mname'];
+    		$lN = $r['emp_lname'];
     		$mN = $mN[0];
     		$fullName = "$fN $mN. $lN";
     		$fullName = ucwords($fullName);
@@ -34,7 +34,7 @@ if(isset($_POST['choice'])){
     		<tr>
     			<td><?= $r['item_name']; ?></td>
     			<td><?= $fullName; ?></td>
-    			<td><?= $r['dep_desc']; ?></td>
+    			<td><?= $r['off_desc']; ?></td>
     			<td><?= $r['cat_desc']; ?></td>
     			<td><?= $r['con_desc']; ?></td>
     		</tr>
@@ -47,7 +47,7 @@ if(isset($_POST['choice'])){
 // $db->Disconnect();
  ?>
 
-<!-- for the datatable of user -->
+<!-- for the datatable of employee -->
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#myTable-report').DataTable();

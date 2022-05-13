@@ -19,11 +19,12 @@
 <nav class="navbar navbar-inverse" style="margin-top:5px;">
     <div class="container-fluid">
      <div class="banner">
-     <a  href="https://www.niituniversity.in/">
+		 <a href="https://www.niituniversity.in/">
                     <img src="img/logo.png" width="200" height="90" style="position:absolute;margin-top:-23.5px;">
-</a>
+</a> 
 <div style="color:white ;margin-left:250px;margin-bottom:40px;margin-top:30px;font-size:30px;font-family:Bodoni MT Black;">Equipment Management System</div>
-</div> 
+
+               </div> 
      
 
      </div>
@@ -46,7 +47,7 @@
 				<h3 class="panel-title">Please Login</h3>
 			</div>
 			<div class="panel-body">
-				<!-- login form -->
+				<!-- logn form -->
 					<form class="form-horizontal" role="form" id="form-login">
 					<center>
 						<strong class="text-danger"></strong>
@@ -78,7 +79,7 @@
 					    </div>
 					  </div>
 					</form>
-				<!-- login form -->
+				<!-- logn form -->
 			</div>
 		</div>
 		</div>
@@ -142,3 +143,4 @@
 
 </body>
 </html>	
+

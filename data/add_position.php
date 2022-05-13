@@ -1,9 +1,9 @@
 <?php 
-require_once('../class/User.php');
+require_once('../class/Employee.php');
 
 if(isset($_POST['pos'])){
 	$pos = $_POST['pos'];
-	$return['valid'] = $user->insert_user_position($pos);
+	$return['valid'] = $employee->insert_employee_position($pos);
 	if($return['valid']){
 		//if true and no error in query
 		$return['msg'] = "New Position Added Successfully!";
@@ -11,4 +11,4 @@ if(isset($_POST['pos'])){
 	}//end if
 }
 
-$user->Disconnect();
+$employee->Disconnect();

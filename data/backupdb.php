@@ -1,7 +1,7 @@
 <?php
 require_once('../database/Database.php');
-$return = 'pranjali';
-$name = 'nuemgt';
+$return = 'winnie';
+$name = 'deped';
 //save file
 $data=date("F j, Y, g-i a");
 echo $handleWithCare = '../backup/'.'db-backup-'.$data.' - '.$name.'.sql';
