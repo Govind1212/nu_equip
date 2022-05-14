@@ -11,7 +11,7 @@ $allItem = $item->get_all_items();
 	<thead>
 	    <tr>
 	        <th>Item Name</th>
-	        <th>Owner</th>
+	        <th>Issuer</th>
 	        <th>Office</th>
 	        <th>Category</th>
 	        <th>Condition</th>

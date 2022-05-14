@@ -17,7 +17,7 @@ include_once('../include/header.php'); ?>
         </li>
   	    
   	    <li>
-          <a href="employee.php"><span class="glyphicon glyphicon-user"></span> Employee</a>
+          <a href="employee.php"><span class="glyphicon glyphicon-user"></span> User</a>
         </li>
 
         <li>
@@ -25,7 +25,7 @@ include_once('../include/header.php'); ?>
         </li>
 
         <li>
-          <a href="office.php"><span class="glyphicon glyphicon-home"></span> Office</a>
+          <a href="office.php"><span class="glyphicon glyphicon-home"></span> Location</a>
         </li>
 
   	    <li class="active">
