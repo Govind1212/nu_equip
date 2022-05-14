@@ -12,7 +12,7 @@ $allItem = $item->get_all_items();
 	    <tr>
 	        <th>Item Name</th>
 	        <th>Issuer</th>
-	        <th>Office</th>
+	        <th>Location</th>
 	        <th>Category</th>
 	        <th>Condition</th>
 	        <th><center>Action</center></th>

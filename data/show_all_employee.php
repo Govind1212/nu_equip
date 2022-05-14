@@ -12,7 +12,7 @@ $employees = $employee->get_employees(true);
 	    <tr>
 	        <th>Employee Name</th>
 	        <th>Position</th>
-	        <th>Office</th>
+	        <th>Location</th>
 	        <th><center>Action</center></th>
 	    </tr>
 	</thead>

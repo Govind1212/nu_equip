@@ -7,10 +7,7 @@ $item_owned = $employee->item_owned();
 // 	print_r($item_owned);
 // echo '</pre>';
 
-/*
-*ang e display ra niya is ang row sa item nga ang emp na belong sa naka login nga user
-*og ang status_id niya is 4, see DB value equivalent sa 4 
-*/
+
 
 ?>
 
@@ -49,7 +46,7 @@ $item_owned = $employee->item_owned();
 
 					<button type="button" class="btn btn-danger btn-sm" onclick="request('<?php echo $iID; ?>', '3');">
 					<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-					Condemed</button>
+					Damaged</button>
 					
 				</td>
 			</tr>

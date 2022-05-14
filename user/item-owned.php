@@ -1,5 +1,5 @@
 <?php 
-include_once('../data/user_session.php');//check if naay session otherwise e return sa login
+include_once('../data/user_session.php');
 include_once('../include/header.php'); 
 include_once('../include/banner.php'); 
 ?>
@@ -8,12 +8,12 @@ include_once('../include/banner.php');
   	<div class="container-fluid">
    	 
   	  <ul class="nav navbar-nav">
-  	    <li>
+  	    <!--<li>
           <a href="dashboard.php"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a>
-        </li>
+        </li>-->
 
          <li class="active">
-          <a href="item-owned.php"><span class="glyphicon glyphicon-th-list"></span> Item's Owned</a>
+          <a href="item-owned.php"><span class="glyphicon glyphicon-th-list"></span> Item</a>
         </li>
 
          <li>
@@ -40,7 +40,7 @@ include_once('../include/banner.php');
 
  			 	<div class="panel-heading">
         <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
-        Item's Own</div>
+        Item's to Be Maintained</div>
   	  			<div class="panel-body">
               <!-- main content -->
                 <div id="item-owned"></div>

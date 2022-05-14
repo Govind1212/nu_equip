@@ -2,10 +2,7 @@
 var valid = true;
 var action = '';
 
-/*
-	*naa ni siya add_item_modal.php
-	*form ni siya kung mag add og item
-*/
+
 
 $(document).on('submit', '#add-item-form', function(event) {
 	event.preventDefault();

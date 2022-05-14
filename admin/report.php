@@ -7,9 +7,9 @@ include_once('../include/header.php'); ?>
   	<div class="container-fluid">
    	 
   	  <ul class="nav navbar-nav">
-  	    <li>
+  	   <!-- <li>
           <a href="index.php"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a>
-        </li>
+        </li> -->
      
   	    <li>
           <a href="item.php"><span class="glyphicon glyphicon-object-align-vertical"></span> Item
@@ -62,7 +62,7 @@ include_once('../include/header.php'); ?>
                 <select class="btn btn-default" id="report-choice">
                   <option value="all">All</option>
                   <option value="working">Working</option>
-                  <option value="condemed">Condemed</option>
+                  <option value="Damaged">Damaged</option>
                 </select>
                 
                 <button id="print-btn" type="button" class="btn btn-success">

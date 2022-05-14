@@ -8,12 +8,12 @@ include_once('../include/banner.php');
   	<div class="container-fluid">
    	 
   	  <ul class="nav navbar-nav">
-  	    <li>
+  	    <!--<li>
           <a href="dashboard.php"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a>
-        </li>
+        </li>-->
 
          <li>
-          <a href="item-owned.php"><span class="glyphicon glyphicon-th-list"></span> Item's Owned</a>
+          <a href="item-owned.php"><span class="glyphicon glyphicon-th-list"></span> Item's Issued</a>
         </li>
 
          <li class="active">

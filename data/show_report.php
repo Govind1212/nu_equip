@@ -17,7 +17,7 @@ if(isset($_POST['choice'])){
 	    <tr>
 	        <th>Item Name</th>
 	        <th>Issuer</th>
-	        <th>Office</th>
+	        <th>Location</th>
 	        <th>Category</th>
 	        <th>Condition</th>
 	    </tr>

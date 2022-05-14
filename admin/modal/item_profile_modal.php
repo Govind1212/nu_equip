@@ -74,6 +74,10 @@
 				</form>
 			</div>
 			<div class="modal-footer">
+			<button id="print-btn" type="button" class="btn btn-success">
+                PRINT
+                <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+            </button>
 				<button type="button" class="btn btn-default" data-dismiss="modal">
 					OK
 					<span class="glyphicon glyphicon-check" aria-hidden="true"></span>

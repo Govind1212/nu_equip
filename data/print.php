@@ -19,7 +19,7 @@ if(isset($_GET['choice'])){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>DepEd Inventory System</title>
+    <title>NU Equipment Management System</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@ if(isset($_GET['choice'])){
 
 
 <center>
-    <h2>DepEd Item Inventory</h2>
+    <h2>NU Equipment Management System</h2>
     <h3>as of</h3>
     <h3><?= date('m-d-Y'); ?></h3>
 </center>
@@ -43,8 +43,8 @@ if(isset($_GET['choice'])){
     <thead>
         <tr>
             <th>Item Name</th>
-            <th>Owner</th>
-            <th>Office</th>
+            <th>Issuer</th>
+            <th>Location</th>
             <th>Category</th>
             <th>Condition</th>
         </tr>

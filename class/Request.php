@@ -76,7 +76,7 @@ class Request extends Database implements iRequest {
 		//update request
 
 		$status = 4;/// 4 is the default id for item that has not request
-		$request_is_done = 1;//done para dili na siya ma view sa owners current request
+		$request_is_done = 1;
 
 		//update item
 		$sql = "UPDATE tbl_item
